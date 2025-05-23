@@ -1,0 +1,167 @@
+version: "3.1"
+
+rules:
+# ========== System Rules (unchanged) ==========
+- rule: Greet user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- rule: Handle thank you
+  steps:
+  - intent: thank
+  - action: utter_thank
+
+- rule: Handle goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Handle who are you
+  steps:
+  - intent: who_are_you
+  - action: utter_who_are_you
+
+- rule: Handle out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_default
+
+# ========== Options Menu Rules (unchanged) ==========  
+- rule: Show ESS options
+  steps:
+  - intent: ess_options
+  - action: utter_ess_options
+
+- rule: Show Manager options
+  steps:
+  - intent: manager_options
+  - action: utter_manager_options
+
+- rule: Show Payroll options
+  steps:
+  - intent: payroll_options
+  - action: utter_payroll_options
+
+- rule: Show Employee Management options
+  steps:
+  - intent: employee_mgmt_options
+  - action: utter_employee_mgmt_options
+
+- rule: Show Organization Setup options
+  steps:
+  - intent: org_setup_options
+  - action: utter_org_setup_options
+
+- rule: Show Company Settings options
+  steps:
+  - intent: company_settings_options
+  - action: utter_company_settings_options
+
+# ========== Updated Button Response Rules ==========
+# ESS Rules
+- rule: Handle ESS Apply Leave
+  steps:
+  - intent: ess_apply_leave
+  - action: action_handle_button_click
+
+- rule: Handle ESS Cancel Leave
+  steps:
+  - intent: ess_cancel_leave
+  - action: action_handle_button_click
+
+- rule: Handle ESS Revoke Leave
+  steps:
+  - intent: ess_revoke_leave
+  - action: action_handle_button_click
+
+- rule: Handle ESS Mark Attendance
+  steps:
+  - intent: ess_mark_attendance
+  - action: action_handle_button_click
+
+- rule: Handle ESS Attendance Correction
+  steps:
+  - intent: ess_request_attendance_correction
+  - action: action_handle_button_click
+
+# Manager Rules
+- rule: Handle Manager Approve Leave
+  steps:
+  - intent: manager_approve_leave
+  - action: action_handle_button_click
+
+# Payroll Rules
+- rule: Handle Payroll Request
+  steps:
+  - intent: payroll_request
+  - action: action_handle_button_click
+
+- rule: Handle Payroll Run
+  steps:
+  - intent: payroll_run
+  - action: action_handle_button_click
+
+- rule: Handle Payroll Add Employee
+  steps:
+  - intent: payroll_add_employee
+  - action: action_handle_button_click
+
+# Employee Management Rules
+- rule: Handle Employee Create
+  steps:
+  - intent: emp_mgmt_create
+  - action: action_handle_button_click
+
+- rule: Handle Employee Update
+  steps:
+  - intent: emp_mgmt_update
+  - action: action_handle_button_click
+
+# Organization Setup Rules
+- rule: Handle Update Branch
+  steps:
+  - intent: org_update_branch
+  - action: action_handle_button_click
+
+- rule: Handle Update Department
+  steps:
+  - intent: org_update_department
+  - action: action_handle_button_click
+
+- rule: Handle Update Working Days
+  steps:
+  - intent: org_update_working_days
+  - action: action_handle_button_click
+
+- rule: Handle Update Attendance Location
+  steps:
+  - intent: org_update_attendance_location
+  - action: action_handle_button_click
+
+# Company Settings Rules
+- rule: Handle Update Company Details
+  steps:
+  - intent: company_update_details
+  - action: action_handle_button_click
+
+- rule: Handle Update Leave Types
+  steps:
+  - intent: company_update_leave_types
+  - action: action_handle_button_click
+
+- rule: Handle Update Terms
+  steps:
+  - intent: company_update_terms
+  - action: action_handle_button_click
+
+# ========== Affirmation Rules (unchanged) ==========
+- rule: Respond to affirm (ok)
+  steps:
+  - intent: affirm
+  - action: utter_thank
+
+- rule: Respond to deny (no)
+  steps:
+  - intent: deny
+  - action: utter_goodbye

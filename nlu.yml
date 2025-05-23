@@ -1,0 +1,284 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - Hi
+    - Hello
+    - Hey
+    - Good morning
+    - Good afternoon
+    - Hi there
+    - What's up
+    - Howdy
+    - Greetings
+    - Yo
+    - What's going on
+    
+
+- intent: thank
+  examples: |
+    - thanks
+    - thank you
+    - appreciate it
+    - thanks for the help
+    - thank you so much
+    - thanks a lot
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - talk to you later
+    - have a good day
+    - go
+    - take care
+    - see you later
+    - catch you later
+    - later
+
+
+- intent: who_are_you
+  examples: |
+    - who are you
+    - what are you
+    - are you a bot
+    - are you human
+    - what's your name
+    - who created you
+
+- intent: ess_options
+  examples: |
+    - employee self service
+    - ESS
+    - I need help with employee services
+    - show me employee options
+    - employee services
+
+- intent: ess_apply_leave
+  examples: |
+    - how to apply for a leave
+    - apply for leave
+    - leave application process
+    - I want to apply leave
+    - process to apply leave
+
+- intent: ess_cancel_leave
+  examples: |
+    - how to cancel a leave
+    - cancel my leave
+    - leave cancellation process
+    - I need to cancel my leave
+    - procedure to cancel leave
+
+- intent: ess_revoke_leave
+  examples: |
+    - how to revoke a leave
+    - revoke my approved leave
+    - take back my approved leave
+    - process to revoke leave
+    - undo my approved leave
+
+- intent: ess_mark_attendance
+  examples: |
+    - how to mark attendance
+    - mark my attendance
+    - attendance marking process
+    - check in process
+    - check out process
+
+- intent: ess_request_attendance_correction
+  examples: |
+    - how to request attendance correction
+    - correct my attendance
+    - attendance correction request
+    - fix my attendance record
+    - wrong attendance correction
+
+- intent: manager_options
+  examples: |
+    - manager panel
+    - I'm a manager
+    - manager options
+    - show manager functions
+    - manager tools
+
+- intent: manager_approve_leave
+  examples: |
+    - where to approve leave
+    - approve team leave
+    - leave approval process
+    - how to approve leave requests
+    - manager leave approval
+
+- intent: payroll_options
+  examples: |
+    - payroll
+    - payroll management
+    - salary questions
+    - pay related
+    - payroll options
+
+- intent: payroll_request
+  examples: |
+    - how to request for payroll
+    - generate payroll request
+    - request payroll processing
+    - initiate payroll
+    - payroll generation process
+
+- intent: payroll_run
+  examples: |
+    - how to run payroll
+    - process payroll
+    - execute payroll
+    - monthly payroll run
+    - payroll processing steps
+
+- intent: payroll_add_employee
+  examples: |
+    - how to add employee payroll
+    - setup new employee payroll
+    - add payroll for employee
+    - payroll for new hire
+    - configure employee payroll
+
+- intent: employee_mgmt_options
+  examples: |
+    - employee management
+    - admin employee options
+    - manage employees
+    - add new employee
+    - update employee details
+
+- intent: emp_mgmt_create
+  examples: |
+    - how to create employees
+    - add new employee
+    - employee creation process
+    - register new staff
+    - onboard new employee
+
+- intent: emp_mgmt_update
+  examples: |
+    - how to update employee details
+    - modify employee information
+    - change employee records
+    - edit staff details
+    - update employee profile
+
+- intent: org_setup_options
+  examples: |
+    - organization setup
+    - branch setup
+    - department setup
+    - working days
+    - attendance location
+
+- intent: org_update_branch
+  examples: |
+    - how to update branch
+    - modify branch details
+    - change branch information
+    - edit branch setup
+    - update branch location
+
+- intent: org_update_department
+  examples: |
+    - how to update departments
+    - modify department details
+    - change department structure
+    - edit department setup
+    - update department names
+
+- intent: org_update_working_days
+  examples: |
+    - how to update working days
+    - change working calendar
+    - modify work schedule
+    - edit working days
+    - update company calendar
+
+- intent: org_update_attendance_location
+  examples: |
+    - how to update attendance location
+    - change geo location settings
+    - modify attendance boundaries
+    - edit location settings
+    - update office location for attendance
+
+- intent: company_settings_options
+  examples: |
+    - company settings
+    - update company details
+    - leave types
+    - terms and conditions
+    - company policies
+
+- intent: company_update_details
+  examples: |
+    - where to update company details
+    - change company information
+    - modify company profile
+    - edit company settings
+    - update organization details
+
+- intent: company_update_leave_types
+  examples: |
+    - how to update leave types
+    - modify leave categories
+    - change leave policies
+    - edit leave settings
+    - update leave rules
+
+- intent: company_update_terms
+  examples: |
+    - how to update terms and conditions
+    - modify company T&C
+    - change policy documents
+    - edit terms of service
+    - update legal terms
+
+- intent: out_of_scope
+  examples: |
+    - what's the weather
+    - tell me a joke
+    - who won the game
+    - what's your favorite color
+    - how old are you
+    - what time is it
+
+- intent: affirm
+  examples: |
+    - ok
+    - okay
+    - sure
+    - yes
+    - yep
+    - alright
+    - got it
+    - fine
+
+- intent: deny
+  examples: |
+    - no
+    - nope
+    - nothing else
+    - that's all
+    - no thanks
+    - I'm done
+    - not now
+    - that's it
+
+- intent: out_of_scope
+  examples: |
+    - what's the weather
+    - tell me a joke
+    - who won the game
+    - what's your favorite color
+    - how old are you
+    - what time is it
+    - how r u 
+    - why are you here
+    
